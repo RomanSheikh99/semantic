@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial;
+        }
+        header{
+            width: 100%;
+            text-align: center;
+            font-size: 46px;
+            padding: 100px 0;
+            background-color: #7fffd457;
+        }
+        main{
+            width: 90%;
+            margin: 0 auto;
+        }
+        
+        div.video-box{
+            background-color: #7fffd457;
+            margin: 30px 0px;
+            border-radius: 5px;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+        }
+        .video{
+            width: 20%;
+            padding: 10px;
+        }
+        video{
+            height: 200px;
+            width: 260px;
+        }
+        h2{
+            font-size: 30px;
+            line-height: 4;
+        }
+        footer{
+            width: 100%;
+            background-color: darkgrey;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 20px;
+        }
+        footer a{
+            text-decoration: none;
+        }
+        span {
+            font-size: 20px;
+            line-height: 2;
+        }
+        .iframe-video{
+            background-color: #7fffd457;
+            margin: 30px 0px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+        }
+        iframe{
+            padding: 20px;
+            width: 50%;
+            height: 400px;
+        }
+    </style>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="">Media</a>
+                <ul class="dropdown">
+                    <li><a href="audio.html">Audio</a></li>
+                    <li><a href="video.html">Video</a></li>
+                </ul>
+            </li>
+            <li><a href="table.html">Table</a></li>
+            <li><a href="form.html">Form</a></li>
+            <li><a href="">Html5</a>
+                <ul class="dropdown">
+                    <li><a href="tags.html">All Tags</a></li>
+                    <li><a href="attributes.html">Attributes</a></li>
+                </ul>
+            </li>
+            <li><a href="svg.html">SVG</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Welcome To Video World</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Video Added By Video Tag</h2>
+            <div class="video-box">
+                <div class="video">
+                    <video src="media/video/nj.mp4" poster="media/img/nj1.jpg" controls></video>
+                    <span>Controls</span>
+                </div>
+                <div class="video">
+                    <video src="media/video/nj.mp4" poster="media/img/nj2.jpg" controls autoplay></video>
+                    <span>Autoplay</span>
+                </div>
+                <div class="video">
+                    <video src="media/video/nj.mp4" poster="media/img/nj3.jpg" controls loop></video>
+                    <span>Loop</span>
+                </div>
+                <div class="video">
+                    <video src="media/video/nj.mp4" poster="media/img/nj4.jpg" controls preload></video>
+                    <span>Preload</span>
+                </div>
+                <div class="video">
+                    <video src="media/video/nj.mp4" poster="media/img/nj5.jpeg" controls muted></video>
+                    <span>Muted</span>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Video Added By Iframe Tag</h2>
+            <div class="iframe-video">
+                <iframe width="40%" height="300" src="https://www.youtube-nocookie.com/embed/3JcnbLlYLjI?start=8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                <iframe width="40%" height="300" src="https://www.youtube-nocookie.com/embed/suHwdpnAWKw?start=8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <a href="">
+            All Reserved By Video World
+        </a>
+    </footer>
+</body>
+</html>

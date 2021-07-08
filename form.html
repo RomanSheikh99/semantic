@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial;
+        }
+        header{
+            width: 100%;
+            text-align: center;
+            font-size: 46px;
+            padding: 100px 0;
+            background-color: #7fffd457;
+        }
+        main{
+            width: 90%;
+            margin: 80px auto;
+            background-color: aquamarine;
+            padding: 40px;
+            border-radius: 10px;
+        }
+        form {text-align: center;}
+
+h2 {
+    font-size: 30px;
+    line-height: 3;
+}
+
+input,select,button {
+    outline: none;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: 1px solid #999;
+    border-radius: 20px;
+    margin: 10px 15px;
+    background: transparent;
+}
+
+fieldset {
+    width: 60%;
+    margin: 20px auto;
+    font-size: 20px;
+    line-height: 2;
+    border-radius: 20px;
+    border: 1px solid #666;
+}
+
+legend {
+    font-size: 26px;
+}
+
+textarea {
+    outline: none;
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+    height: 100px;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px 5px;
+    background: transparent;
+    border: 1px solid #666;
+    margin-bottom: 30px;
+}
+
+button {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px 40px;
+    background: darkseagreen;
+    cursor: pointer;
+    outline: none;
+}
+        footer{
+            width: 100%;
+            background-color: darkgrey;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 20px;
+        }
+        footer a{
+            text-decoration: none;
+        }
+    </style>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="">Media</a>
+                <ul class="dropdown">
+                    <li><a href="audio.html">Audio</a></li>
+                    <li><a href="video.html">Video</a></li>
+                </ul>
+            </li>
+            <li><a href="table.html">Table</a></li>
+            <li><a href="form.html">Form</a></li>
+            <li><a href="">Html5</a>
+                <ul class="dropdown">
+                    <li><a href="tags.html">All Tags</a></li>
+                    <li><a href="attributes.html">Attributes</a></li>
+                </ul>
+            </li>
+            <li><a href="svg.html">SVG</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Welcome To Pithar Form</h1>
+    </header>
+    <main>
+        <form action="">
+            <h2>PithaKhur Login Form</h2>
+            <input type="text" name="full-name" placeholder="Enter Your Full Name" id="">
+            <input type="email" name="email" placeholder="Enter Your Email" id="">
+            <select name="pitha-select" id="">
+                <option value="" selected>Select your Pitha</option>
+                <option value="">Vapa</option>
+                <option value="">Citoy</option>
+                <option value="">Muda</option>
+                <option value="">telerPitha</option>
+            </select>
+            <fieldset>
+                <legend>Tumi Jei Vorta Khete Cao</legend>
+                <label for="sorisa">
+                    <input type="radio" name="vorta" id="sorisa">Sorisa
+                </label>
+                <label for="sutki">
+                    <input type="radio" name="vorta" id="sutki">Sutki
+                </label>
+                <label for="sitol">
+                    <input type="radio" name="vorta" id="sitol">Sitol
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Ki Doroner Pitha Khaba</legend>
+                <label for="gorom">
+                    <input type="checkbox" name="pithar-doron" id="gorom">Gorom
+                </label>
+                <label for="thanda">
+                    <input type="checkbox" name="pithar-doron" id="thanda">Thanda
+                </label>
+                <label for="jhal">
+                    <input type="checkbox" name="pithar-doron" id="jhal">Jhal
+                </label>
+            </fieldset>
+            <textarea name="" id="" placeholder="Spacially kiso bolar thakle bolo" cols="30" rows="10"></textarea>
+            <button type="submit">Submit</button><button type="reset">Reset</button>
+        </form>
+    </main>
+    <footer>
+        <a href="">
+            All Reserved By Pithar Form 
+        </a>
+    </footer>
+</body>
+</html>

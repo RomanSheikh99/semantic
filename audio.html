@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial;
+        }
+        header{
+            width: 100%;
+            text-align: center;
+            font-size: 46px;
+            padding: 100px 0 0 0;
+            background-color: #7fffd457;
+            z-index: 1;
+        }
+        header h1{
+            margin-bottom: 80px;
+        }
+        header nav ul{
+            width: 100%;
+            background-color: darkgray;
+            display: flex;
+            justify-content: center;
+        }
+        header nav ul li{
+            list-style: none;
+            padding: 10px 20px;
+            margin: 0 20px;
+        }
+        header nav ul li a{
+            text-decoration: none;
+            font-size: 26px;
+            padding: 10px 20px;
+        }
+        main{
+            width: 90%;
+            margin: 0 auto;
+        }
+        
+        div{
+            background-color: #7fffd457;
+            color: black;
+            text-align: justify;
+            margin: 30px 10px;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        h2{
+            font-size: 30px;
+            line-height: 4;
+        }
+        footer{
+            width: 100%;
+            background-color: darkgrey;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 20px;
+        }
+        footer a{
+            text-decoration: none;
+        }
+    .audio-nav{
+        z-index: 1;
+    }
+    </style>
+    
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="">Media</a>
+                <ul class="dropdown">
+                    <li><a href="audio.html">Audio</a></li>
+                    <li><a href="video.html">Video</a></li>
+                </ul>
+            </li>
+            <li><a href="table.html">Table</a></li>
+            <li><a href="form.html">Form</a></li>
+            <li><a href="">Html5</a>
+                <ul class="dropdown">
+                    <li><a href="tags.html">All Tags</a></li>
+                    <li><a href="attributes.html">Attributes</a></li>
+                </ul>
+            </li>
+            <li><a href="svg.html">SVG</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Welcome To Audio World</h1>
+        <nav class="audio-nav">
+            <ul>
+                <li><a href="#controls">Controls</a></li>
+                <li><a href="#autoplay">Autoplay</a></li>
+                <li><a href="#loop">Loop</a></li>
+                <li><a href="#muted">Muted</a></li>
+                <li><a href="#preload">Preload</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="controls">
+            <h2>Audio Tag's Controls Attribute</h2>
+            <audio src="media/audio/angel.mp3" controls></audio>
+        </div>
+        <div id="autoplay">
+            <h2>Audio Tag's Autoplay Attribute</h2>
+            <audio src="media/audio/iphone-remix.mp3" controls autoplay></audio>
+        </div>
+        <div id="loop">
+            <h2>Audio Tag's Loop Attribute</h2>
+            <audio src="media/audio/iphone.mp3" controls loop></audio>
+        </div>
+        <div id="muted">
+            <h2>Audio Tag's Muted Attribute</h2>
+            <audio src="media/audio/ole.mp3" controls muted></audio>
+        </div>
+        <div id="preload">
+            <h2>Audio Tag's Preload Attribute</h2>
+            <audio src="media/audio/panda.mp3" controls preload></audio>
+        </div>
+    </main>
+    <footer>
+        <a href="">
+            All Reserved By Audio World
+        </a>
+    </footer>
+</body>
+</html>

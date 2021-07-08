@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial;
+        }
+        header{
+            width: 100%;
+            text-align: center;
+            font-size: 46px;
+            padding: 100px 0;
+            background-color: #7fffd457;
+        }
+        main{
+            width: 90%;
+            margin: 80px auto;
+            background-color: aquamarine;
+            padding: 40px;
+            border-radius: 10px;
+        }
+        table{
+            width: 60%;
+            margin: 0 auto;
+            border: 1px solid #666;
+            border-collapse: collapse;
+        }
+        td,th{
+            border: 2px solid #666;
+            font-size: 40px;
+            text-align: center;
+            padding: 10px 20px;
+        }
+        footer{
+            width: 100%;
+            background-color: darkgrey;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 20px;
+        }
+        footer a{
+            text-decoration: none;
+        }
+    </style>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="">Media</a>
+                <ul class="dropdown">
+                    <li><a href="audio.html">Audio</a></li>
+                    <li><a href="video.html">Video</a></li>
+                </ul>
+            </li>
+            <li><a href="table.html">Table</a></li>
+            <li><a href="form.html">Form</a></li>
+            <li><a href="">Html5</a>
+                <ul class="dropdown">
+                    <li><a href="tags.html">All Tags</a></li>
+                    <li><a href="attributes.html">Attributes</a></li>
+                </ul>
+            </li>
+            <li><a href="svg.html">SVG</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Welcome To Table</h1>
+    </header>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>Selary</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Roman Sheikh</td>
+                    <td>CEO</td>
+                    <td>$1200</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Syed Amin</td>
+                    <td>CFO</td>
+                    <td>$1100</td>
+                </tr>
+                <tr>
+                    <td>3 </td>
+                    <td>Syed Duha</td>
+                    <td>CTO</td>
+                    <td>$1000</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Abu Taleb</td>
+                    <td>MD</td>
+                    <td>$900</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <a href="">
+            All Reservef By Table
+        </a>
+    </footer>
+</body>
+</html>

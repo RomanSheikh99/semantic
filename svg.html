@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG</title>
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial;
+        }
+        header{
+            width: 100%;
+            text-align: center;
+            font-size: 46px;
+            padding: 40px 0;
+            background-color: #7fffd457;
+        }
+        main{
+            width: 90%;
+            margin: 40px auto;
+            background-color: aquamarine;
+            padding: 40px;
+            border-radius: 10px;
+        }
+        footer{
+            width: 100%;
+            background-color: darkgrey;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 20px;
+        }
+        footer a{
+            text-decoration: none;
+        }
+        svg{
+            border: 5px solid red;
+            border-radius: 10px;
+            width: 100%;
+            height: 560px;
+        }
+    </style>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="">Media</a>
+                <ul class="dropdown">
+                    <li><a href="audio.html">Audio</a></li>
+                    <li><a href="video.html">Video</a></li>
+                </ul>
+            </li>
+            <li><a href="table.html">Table</a></li>
+            <li><a href="form.html">Form</a></li>
+            <li><a href="">Html5</a>
+                <ul class="dropdown">
+                    <li><a href="tags.html">All Tags</a></li>
+                    <li><a href="attributes.html">Attributes</a></li>
+                </ul>
+            </li>
+            <li><a href="svg.html">SVG</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Welcome To SVG World</h1>
+    </header>
+    <main>
+        <svg viewbox="0 0 200 200">
+            <circle cx="100" cy="100" r="90" fill="yellow"></circle>
+            <circle cx="55" cy="70" r="15" fill="black"></circle>
+            <circle cx="140" cy="70" r="15" fill="black"></circle>
+            <path d="M55 130 A1, 0.8 0 0 , 0 140 130" stroke="black" stroke-width="10px"></path>
+        </svg>
+    </main>
+    <footer>
+        <a href="">
+            All Reserved By SVG
+        </a>
+    </footer>
+</body>
+</html>
